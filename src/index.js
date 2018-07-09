@@ -1,12 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import "semantic-ui-css/semantic.css";
+import {Provider} from 'react-redux';
 
 import App from './components/app'
 import './index.css'
+import configureStore from './configureStore';
+
+const store = configureStore()
 
 
-ReactDOM.render(<App/>, document.getElementById("app"))
+ReactDOM.render(<Provider store={store}>
+    <App/>
+</Provider>, document.getElementById("app"))
 
 //TODO
 //We can have the logo or name on the left corner
