@@ -1,0 +1,107 @@
+:root {
+    --pearlWhite: #FDFCFF;
+    --goldenGold: #FFD677;
+    --darkBlue: #A36363;
+    --menuItemsBase: #90B0CE;
+    --menuItemSelected: #728BA3;
+}
+
+html, body, #app {
+    height: 100%;
+    background-color: var(--pearlWhite);
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.fullHeight {
+    height: 100%;
+}
+
+.centerAll {
+    display: flex;
+    justify-content: center;
+
+}
+
+.ui.secondary.menu {
+    font-family: 'Nunito', sans-serif;
+
+}
+
+.ui.secondary.menu .active.item, .ui.secondary.menu .active.item:hover {
+    background-color: transparent;
+
+}
+
+.twelve.wide.column .ui.secondary.menu .item {
+    color: var(--menuItemsBase);
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+}
+
+.twelve.wide.column .ui.secondary.menu .item:hover {
+    color: var(--menuItemSelected);
+    background-color: transparent;
+    font-weight: 900 !important;
+}
+
+.ui.secondary.menu .active.item:hover {
+    font-weight: 900 !important;
+    color: var(--menuItemSelected);
+
+}
+
+.ui.secondary.menu .item.activeItem {
+    font-weight: 900 !important;
+    color: var(--menuItemSelected) !important;
+}
+
+.background-layout {
+    position: relative;
+    height: 100%;
+}
+
+.left-content {
+
+}
+
+.right-content {
+
+}
+
+.baseLayer {
+    position: relative;
+}
+
+.upperLayer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: 0.5em;
+}
+
+.game-content {
+    background-color: var(--pearlWhite);
+}
+
+.score-content {
+    background-color: var(--menuItemsBase);
+}
+
+.four.wide.column.score-content.centerAll {
+    padding-top: 2em;
+    display: flex;
+    justify-content: center;
+
+}
+
+.ui.large.header {
+    font-size: 8.714286em;
+}
+
+.four.wide.column.score-content.centerAll .trophy.massive.icon {
+    color: var(--goldenGold);
+}
