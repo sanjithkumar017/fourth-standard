@@ -1,17 +1,31 @@
 import React from 'react';
-import {Message} from 'semantic-ui-react'
+import {Button, Checkbox, Form, Segment, Header, Divider} from 'semantic-ui-react'
 
 class SignupComponent extends React.Component {
     render() {
         //We split it into two
         return (
-            <Message>
-                <Message.Header>Signup</Message.Header>
-                <p>
-                    Give up your Card number and the pin, Please :)
+            <div>
+                <Segment raised size={"huge"}>
+                    <Header size='large'>Log-In</Header>
+                    <Divider/>
+                    <Form>
 
-                </p>
-            </Message>
+                        <Form.Field>
+                            <input placeholder='Username' className={"borderless"}/>
+                        </Form.Field>
+                        <Form.Field>
+                            <input placeholder='Password' className={"borderless"}/>
+                        </Form.Field>
+                        <Form.Field>
+                            <Checkbox label='I agree to the Terms and Conditions'/>
+                        </Form.Field>
+                        <div className={"centerAll"}>
+                            <Button>Proceed</Button>
+                        </div>
+                    </Form>
+                </Segment>
+            </div>
         )
     }
 }

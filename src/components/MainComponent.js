@@ -17,12 +17,14 @@ class MainComponent extends React.Component {
                 <Grid.Column width={12} className={"game-content fullHeight"}>
                     <div className={"upperLayer fullHeight"}>
                         <MenuComponent/>
-                        <Switch>
-                            <Route exact path={"/"} component={GameComponent}/>
-                            <Route path={"/introduction"} component={IntroductionComponent}/>
-                            <Route path={"/signup"} component={SignupComponent}/>
+                        <div className={"centerComplete majorityHeight"}>
+                            <Switch>
+                                <Route exact path={"/"} component={GameComponent}/>
+                                <Route path={"/introduction"} component={IntroductionComponent}/>
+                                <Route path={"/signup"} component={SignupComponent}/>
 
-                        </Switch>
+                            </Switch>
+                        </div>
                     </div>
 
                 </Grid.Column>

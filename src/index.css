@@ -18,9 +18,20 @@ html, body, #app {
     height: 100%;
 }
 
+.majorityHeight {
+    height: 85%;
+}
+
 .centerAll {
     display: flex;
     justify-content: center;
+
+}
+
+.centerComplete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -80,7 +91,6 @@ html, body, #app {
     right: 0;
     left: 0;
     bottom: 0;
-    margin: 0.5em;
 }
 
 .game-content {
@@ -104,4 +114,18 @@ html, body, #app {
 
 .four.wide.column.score-content.centerAll .trophy.massive.icon {
     color: var(--goldenGold);
+}
+
+form .field input.borderless {
+    border: none !important;
+    border-radius: 14px !important;
+    border-bottom: 2px solid var(--menuItemsBase) !important;
+}
+
+.segment.raised {
+    background-color: var(--menuItemsBase);
+}
+
+.ui.large.header, .ui.checkbox label {
+    color: white;
 }
