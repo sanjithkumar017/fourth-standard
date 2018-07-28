@@ -4,6 +4,8 @@
     --darkBlue: #A36363;
     --menuItemsBase: #90B0CE;
     --menuItemSelected: #728BA3;
+    --subHeader: #a29696de;
+    --errorRed: #FF3C38;
 }
 
 html, body, #app {
@@ -28,6 +30,20 @@ html, body, #app {
 
 }
 
+.centerAllColumn {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.centerAllColumn {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+}
+
 .centerComplete {
     display: flex;
     justify-content: center;
@@ -35,15 +51,48 @@ html, body, #app {
 
 }
 
+.centerCompleteColumn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.baseColor {
+    color: var(--menuItemsBase) !important;
+}
+
+.baseColorBackground {
+    background-color: var(--menuItemsBase) !important;
+    color: var(--pearlWhite) !important;
+}
+
+.subHeaderColor {
+    color: var(--subHeader);
+}
+
+.lighter {
+    font-weight: 100 !important;
+}
+
+.ui.medium.header {
+    font-size: 5.285714em;
+}
+
 .ui.secondary.menu {
     font-family: 'Nunito', sans-serif;
 
 }
-.logoOuterStyles{
-    font-size: 27px;
+
+.ui.secondary.menu .active.item.logoOuterStyles, .twelve.wide.column .ui.secondary.menu .item.logoOuterStyles:hover {
+    font-size: 2rem !important;
+    color: var(--menuItemSelected) !important;
+    font-weight: 600 !important;
 }
+
 .logoStyles {
-    font-weight: 900!important;
+    font-weight: 900 !important;
 
 }
 
@@ -125,7 +174,7 @@ html, body, #app {
 
 form .field input.borderless {
     border: none !important;
-    border-radius: 14px !important;
+    border-radius: 0 !important;
     border-bottom: 2px solid var(--menuItemsBase) !important;
 }
 
@@ -135,4 +184,17 @@ form .field input.borderless {
 
 .ui.large.header, .ui.checkbox label {
     color: white;
+}
+
+.gridWidth {
+    width: 40%;
+}
+
+.ui.form input:not([type]), .ui.form input[type="date"], .ui.form input[type="datetime-local"], .ui.form input[type="email"], .ui.form input[type="number"], .ui.form input[type="password"], .ui.form input[type="search"], .ui.form input[type="tel"], .ui.form input[type="time"], .ui.form input[type="text"], .ui.form input[type="file"], .ui.form input[type="url"] {
+    background-color: transparent;
+    text-align: center;
+}
+
+.errorColor {
+    color: var(--errorRed);
 }

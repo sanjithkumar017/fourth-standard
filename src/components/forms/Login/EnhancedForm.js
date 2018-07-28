@@ -4,12 +4,12 @@ import * as Yup from "yup";
 
 
 const EnhancedForm = withSemanticUIFormik({
+    enableReinitialize: false,
     mapPropsToValues: (props) => {
         console.log("this is props in mapPropsToValues", props);
         return {
-            username: props.username || '',
-            password: props.password || '',
-            attemptFailure: props.attemptFailure
+            username: '',
+            password: '',
         }
 
     },

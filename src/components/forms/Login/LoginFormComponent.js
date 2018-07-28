@@ -1,7 +1,11 @@
 import React from 'react';
-import {Button, Checkbox, Form} from 'semantic-ui-react'
+import {Button, Form, Grid} from 'semantic-ui-react'
 
 class LoginFormComponent extends React.Component {
+    constructor(props) {
+        super(props)
+    }
+
     render() {
         const {
             values,
@@ -14,22 +18,32 @@ class LoginFormComponent extends React.Component {
             handleSubmit,
             handleReset,
         } = this.props;
+        console.log("this is errors and touched ", errors, touched);
         const {username, password} = values
         return (
-            <Form>
-                <Form.Field>
-                    <input placeholder='Username' className={"borderless"} value={username}/>
-                </Form.Field>
-                <Form.Field>
-                    <input placeholder='Password' className={"borderless"} value={password}/>
-                </Form.Field>
-                <Form.Field>
-                    <Checkbox label='I agree to the Terms and Conditions'/>
-                </Form.Field>
-                <div className={"centerAll"}>
-                    <Button onClick={handleSubmit}>Proceed</Button>
-                </div>
-            </Form>
+            <Grid centered={true} className={"gridWidth"}>
+                <Grid.Column mobile={12} tablet={12} computer={14}>
+                    <Form>
+                        <Form.Field>
+                            <input placeholder='Username' className={"borderless"} name={'username'}
+                                   value={username}
+                                   onBlur={handleBlur}
+                                   onChange={handleChange}/>
+                        </Form.Field>
+                        {touched['username'] && errors['username'] ? <p className={"centerAll errorColor"}>{errors['username']}</p> : null}
+                        <Form.Field>
+                            <input placeholder='Password' type={"password"} className={"borderless"} name={'password'}
+                                   value={password}
+                                   onBlur={handleBlur}
+                                   onChange={handleChange}/>
+                        </Form.Field>
+                        {touched['password'] && errors['password'] ? <p className={"centerAll errorColor"}>{errors['password']}</p> : null}
+                        <div className={"centerAll"}>
+                            <Button className={"baseColorBackground"} onClick={handleSubmit}>Sign In</Button>
+                        </div>
+                    </Form>
+                </Grid.Column>
+            </Grid>
         )
     }
 }

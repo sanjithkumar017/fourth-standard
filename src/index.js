@@ -15,8 +15,10 @@ ReactDOM.render(<Provider store={store}>
 </Provider>, document.getElementById("app"))
 
 //TODO
-//We can have the logo or name on the left corner
 //Login page
+//Make the input bottom border active
+
+
 //Introduction page
 //Not Found page
 //Work on the backend. Implement JWT

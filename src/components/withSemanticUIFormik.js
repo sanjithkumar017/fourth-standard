@@ -12,15 +12,17 @@ export const withSemanticUIFormik = props => WrappedComponent => {
         }
 
         handleBlur(e, data) {
-            if (data && data.name) {
-                this.props.setFieldValue(data.name, data.value);
-                this.props.setFieldTouched(data.name);
+            console.log("In handleBlur", e.target.value);
+            if (e && e.target.value && e.target.name) {
+                this.props.setFieldValue(e.target.name, e.target.value);
+                this.props.setFieldTouched(e.target.name);
             }
         }
 
         handleChange(e, data) {
-            if (data && data.name) {
-                this.props.setFieldValue(data.name, data.value);
+            console.log("Hello man", e.target.value, e.target.name);
+            if (e && e.target.value && e.target.name) {
+                this.props.setFieldValue(e.target.name, e.target.value);
             }
         }
 

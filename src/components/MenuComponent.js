@@ -2,7 +2,7 @@ import React from 'react';
 import {Menu, Icon, Image} from 'semantic-ui-react'
 import {NavLink, withRouter} from 'react-router-dom'
 
-const LOGO_URI = 'assets/3c53b720fe97bddc31889c2ef9f0af5e.png'
+
 
 class MenuComponent extends React.Component {
     constructor(props) {

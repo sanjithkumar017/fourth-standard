@@ -17,7 +17,7 @@ class MainComponent extends React.Component {
                 <Grid.Column width={12} className={"game-content fullHeight"}>
                     <div className={"upperLayer fullHeight"}>
                         <MenuComponent/>
-                        <div className={"centerComplete majorityHeight"}>
+                        <div className={"majorityHeight"}>
                             <Switch>
                                 <Route exact path={"/"} component={GameComponent}/>
                                 <Route path={"/introduction"} component={IntroductionComponent}/>
