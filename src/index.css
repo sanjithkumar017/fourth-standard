@@ -39,6 +39,13 @@ html, body, #app {
     font-family: 'Nunito', sans-serif;
 
 }
+.logoOuterStyles{
+    font-size: 27px;
+}
+.logoStyles {
+    font-weight: 900!important;
+
+}
 
 .ui.secondary.menu .active.item, .ui.secondary.menu .active.item:hover {
     background-color: transparent;

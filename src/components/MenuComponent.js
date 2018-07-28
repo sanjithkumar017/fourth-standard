@@ -1,6 +1,8 @@
 import React from 'react';
-import {Menu, Icon} from 'semantic-ui-react'
+import {Menu, Icon, Image} from 'semantic-ui-react'
 import {NavLink, withRouter} from 'react-router-dom'
+
+const LOGO_URI = 'assets/3c53b720fe97bddc31889c2ef9f0af5e.png'
 
 class MenuComponent extends React.Component {
     constructor(props) {
@@ -12,8 +14,11 @@ class MenuComponent extends React.Component {
 
         return (
             <Menu secondary className={"centerAll"}>
-                <Menu.Item name='sidebar' active={true}>
+                {/*<Menu.Item name='sidebar' active={true}>
                     <Icon name={"sidebar"} size='large'/>
+                </Menu.Item>*/}
+                <Menu.Item name='logo' className={"logoOuterStyles"}  active={true}>
+                    Fourth<span className={"logoStyles"}><b>/Standard</b></span>
                 </Menu.Item>
 
                 <Menu.Item position='right'>

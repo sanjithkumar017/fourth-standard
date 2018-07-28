@@ -22,7 +22,7 @@ let config = {
     })],
     devServer: {
         historyApiFallback: true,
-        host: "10.0.3.147"
+        host: "0.0.0.0"
     },
     optimization: {
         minimizer: [new UglifyJsPlugin()]
