@@ -1,7 +1,7 @@
 import React from 'react';
 import {Header} from 'semantic-ui-react'
 
-class GameComponent extends React.Component {
+class Game extends React.Component {
     render() {
         //We split it into two
         return (
@@ -14,4 +14,4 @@ class GameComponent extends React.Component {
     }
 }
 
-export default GameComponent;
+export default Game;

@@ -16,7 +16,6 @@ ReactDOM.render(<Provider store={store}>
 
 //TODO
 //Login page
-//Make the input bottom border active
 
 
 //Introduction page

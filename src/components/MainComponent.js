@@ -4,9 +4,9 @@ import {Route, Switch} from 'react-router-dom'
 
 
 import MenuComponent from './MenuComponent'
-import IntroductionComponent from '../screens/IntroductionComponent'
-import SignupComponent from '../screens/SignupComponent'
-import GameComponent from "../screens/GameComponent";
+import Introduction from '../screens/Introduction'
+import Authentication from '../screens/Authentication'
+import Game from "../screens/Game";
 
 
 class MainComponent extends React.Component {
@@ -19,9 +19,9 @@ class MainComponent extends React.Component {
                         <MenuComponent/>
                         <div className={"majorityHeight"}>
                             <Switch>
-                                <Route exact path={"/"} component={GameComponent}/>
-                                <Route path={"/introduction"} component={IntroductionComponent}/>
-                                <Route path={"/signup"} component={SignupComponent}/>
+                                <Route exact path={"/"} component={Game}/>
+                                <Route path={"/introduction"} component={Introduction}/>
+                                <Route path={"/signup"} component={Authentication}/>
 
                             </Switch>
                         </div>

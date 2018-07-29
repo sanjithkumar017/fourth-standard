@@ -1,7 +1,7 @@
 import React from 'react';
 import {Message, Image} from 'semantic-ui-react'
 
-class IntroductionComponent extends React.Component {
+class Introduction extends React.Component {
     render() {
         //We split it into two
         return (
@@ -18,4 +18,4 @@ class IntroductionComponent extends React.Component {
     }
 }
 
-export default IntroductionComponent;
+export default Introduction;

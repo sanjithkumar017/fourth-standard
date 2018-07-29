@@ -39,7 +39,7 @@ class LoginFormComponent extends React.Component {
                         </Form.Field>
                         {touched['password'] && errors['password'] ? <p className={"centerAll errorColor"}>{errors['password']}</p> : null}
                         <div className={"centerAll"}>
-                            <Button className={"baseColorBackground"} onClick={handleSubmit}>Sign In</Button>
+                            <Button className={"sign-inBtn baseColorDarker"} onClick={handleSubmit}>Sign In</Button>
                         </div>
                     </Form>
                 </Grid.Column>

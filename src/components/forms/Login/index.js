@@ -1,4 +1,4 @@
 import LoginComponent from './LoginFormComponent';
-import EnhancedForm from './EnhancedForm';
+import EnhancedLoginForm from './EnhancedForm';
 
-export {LoginComponent, EnhancedForm}
+export {LoginComponent, EnhancedLoginForm}

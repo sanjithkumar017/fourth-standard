@@ -68,6 +68,11 @@ html, body, #app {
     color: var(--pearlWhite) !important;
 }
 
+.baseColorDarker {
+    background-color: var(--menuItemSelected) !important;
+    color: var(--pearlWhite) !important;
+}
+
 .subHeaderColor {
     color: var(--subHeader);
 }
@@ -129,14 +134,6 @@ html, body, #app {
     height: 100%;
 }
 
-.left-content {
-
-}
-
-.right-content {
-
-}
-
 .baseLayer {
     position: relative;
 }
@@ -195,6 +192,35 @@ form .field input.borderless {
     text-align: center;
 }
 
+.ui.form input:not([type]):focus, .ui.form input[type="date"]:focus, .ui.form input[type="datetime-local"]:focus, .ui.form input[type="email"]:focus, .ui.form input[type="number"]:focus, .ui.form input[type="password"]:focus, .ui.form input[type="search"]:focus, .ui.form input[type="tel"]:focus, .ui.form input[type="time"]:focus, .ui.form input[type="text"]:focus, .ui.form input[type="file"]:focus, .ui.form input[type="url"]:focus {
+    background-color: transparent;
+    border-bottom: 3px solid var(--menuItemsBase) !important;
+}
+
 .errorColor {
     color: var(--errorRed);
+}
+
+.sign-inBtn {
+    -webkit-transition: width 1s ease !important; /* For Safari 3.1 to 6.0 */
+    transition: width 1s ease !important;
+    width: 50%;
+    margin-right: 0 !important;
+}
+
+.sign-inBtn:hover {
+    width: 100%;
+}
+
+.ui.buttons .button, .ui.buttons .or, .ui.button {
+    margin-top: 8px;
+    margin-bottom: 14px;
+}
+
+a {
+    color: var(--menuItemsBase);
+}
+
+a:hover {
+    color: var(--menuItemSelected);
 }
