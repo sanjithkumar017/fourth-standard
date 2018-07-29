@@ -16,6 +16,13 @@ ReactDOM.render(<Provider store={store}>
 
 //TODO
 //Login page
+////Add a show hide button for password
+////Unique username check button
+
+//Lets start working on the backend
+////Implement JWT
+////How will forgot password work
+////The token shit
 
 
 //Introduction page

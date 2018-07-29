@@ -1,9 +1,9 @@
-import LoginFormComponent from "./LoginFormComponent";
+import SignUpComponent from "./SignUpComponent";
 import {withSemanticUIFormik} from "../../withSemanticUIFormik";
 import * as Yup from "yup";
 
 
-const EnhancedForm = withSemanticUIFormik({
+const SignUpEnhanced = withSemanticUIFormik({
     enableReinitialize: false,
     mapPropsToValues: (props) => {
         console.log("this is props in mapPropsToValues", props);
@@ -21,6 +21,6 @@ const EnhancedForm = withSemanticUIFormik({
         console.log("this is values", values);
     },
     displayName: 'LoginForm', // helps with React DevTools
-})(LoginFormComponent);
+})(SignUpComponent);
 
-export default EnhancedForm
+export default SignUpEnhanced

@@ -1,7 +1,7 @@
 import React from 'react';
-import {Button, Form, Grid} from 'semantic-ui-react'
+import {Button, Form, Grid} from 'semantic-ui-react';
 
-class LoginFormComponent extends React.Component {
+class SignUpComponent extends React.Component {
     constructor(props) {
         super(props)
     }
@@ -19,7 +19,7 @@ class LoginFormComponent extends React.Component {
             handleReset,
         } = this.props;
         console.log("this is errors and touched ", errors, touched);
-        const {username, password} = values
+        const {username, password, confirmPassword} = values
         return (
             <Grid centered={true} className={"gridWidth"}>
                 <Grid.Column mobile={12} tablet={12} computer={14}>
@@ -30,16 +30,18 @@ class LoginFormComponent extends React.Component {
                                    onBlur={handleBlur}
                                    onChange={handleChange}/>
                         </Form.Field>
-                        {touched['username'] && errors['username'] ? <p className={"centerAll errorColor"}>{errors['username']}</p> : null}
+                        {touched['username'] && errors['username'] ?
+                            <p className={"centerAll errorColor"}>{errors['username']}</p> : null}
                         <Form.Field>
                             <input placeholder='Password' type={"password"} className={"borderless"} name={'password'}
                                    value={password}
                                    onBlur={handleBlur}
                                    onChange={handleChange}/>
                         </Form.Field>
-                        {touched['password'] && errors['password'] ? <p className={"centerAll errorColor"}>{errors['password']}</p> : null}
+                        {touched['password'] && errors['password'] ?
+                            <p className={"centerAll errorColor"}>{errors['password']}</p> : null}
                         <div className={"centerAll"}>
-                            <Button className={"sign-inBtn baseColorDarker"} onClick={handleSubmit}>Sign In</Button>
+                            <Button className={"sign-inBtn baseColorDarker"} onClick={handleSubmit}>Sign Up</Button>
                         </div>
                     </Form>
                 </Grid.Column>
@@ -48,4 +50,4 @@ class LoginFormComponent extends React.Component {
     }
 }
 
-export default LoginFormComponent
+export default SignUpComponent

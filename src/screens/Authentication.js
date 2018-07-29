@@ -1,6 +1,7 @@
 import React from 'react';
 import {Header} from 'semantic-ui-react'
-import {EnhancedLoginForm} from '../components/forms/Login'
+import {SignInEnhanced} from '../components/forms/Authentication'
+import {SignUpEnhanced} from '../components/forms/Authentication'
 
 class Authentication extends React.Component {
     constructor(props) {
@@ -27,7 +28,7 @@ class Authentication extends React.Component {
             <div className={"centerAllColumn majorityHeight"}>
                 <div className={"centerCompleteColumn"}>
                     {formScreen ? <Header as={'h2'} size='medium' className={"baseColor lighter"}>Sign Up</Header> :
-                        <Header as={'h2'} size='medium' className={"baseColor lighter"}>Sign In</Header>}
+                        <Header as={'h2'} size='medium' className={"baseColor lighter"}>Log In</Header>}
                     {formScreen ?
                         <Header.Subheader className={"subHeaderColor"}>Welcome! Want to know how good your school math
                             is?</Header.Subheader> :
@@ -36,10 +37,10 @@ class Authentication extends React.Component {
                             numbers.</Header.Subheader>}
                 </div>
                 <div className={"centerCompleteColumn"}>
-                    <EnhancedLoginForm/>
+                    {formScreen ? <SignUpEnhanced/> : <SignInEnhanced/>}
                     {formScreen ? <Header.Subheader className={"subHeaderColor"}>Signed Up already? Let's get you
                             <a href={"#"}
-                               onClick={this.changeFormScreen}> Signed
+                               onClick={this.changeFormScreen}> Logged
                                 In.</a></Header.Subheader> :
                         <Header.Subheader className={"subHeaderColor"}>New here? Let's get you
                             <a href={"#"}
