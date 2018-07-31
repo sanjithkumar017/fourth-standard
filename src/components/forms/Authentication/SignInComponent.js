@@ -1,9 +1,26 @@
 import React from 'react';
-import {Button, Form, Grid} from 'semantic-ui-react'
+import {Button, Form, Grid, Input, Icon} from 'semantic-ui-react'
 
 class SignInComponent extends React.Component {
     constructor(props) {
         super(props)
+        this.state = {
+            type: 'password',
+            icon: 'eye' //eye slash
+        }
+
+        this.handleTypeChange = this.handleTypeChange.bind(this)
+    }
+
+    handleTypeChange(e, data) {
+        this.setState((prevState) => {
+            if (prevState.type === 'password') {
+                return {type: 'input', icon: 'eye slash'}
+            }
+            else {
+                return {type: 'password', icon: 'eye'}
+            }
+        })
     }
 
     render() {
@@ -18,6 +35,7 @@ class SignInComponent extends React.Component {
             handleSubmit,
             handleReset,
         } = this.props;
+        const {icon, type} = this.state
         console.log("this is errors and touched ", errors, touched);
         const {username, password} = values
         return (
@@ -25,7 +43,7 @@ class SignInComponent extends React.Component {
                 <Grid.Column mobile={12} tablet={12} computer={14}>
                     <Form>
                         <Form.Field>
-                            <input placeholder='Username' className={"borderless"} name={'username'}
+                            <Input icon='user' placeholder='Username' className={"borderless"} name={'username'}
                                    value={username}
                                    onBlur={handleBlur}
                                    onChange={handleChange}/>
@@ -33,7 +51,9 @@ class SignInComponent extends React.Component {
                         {touched['username'] && errors['username'] ?
                             <p className={"centerAll errorColor"}>{errors['username']}</p> : null}
                         <Form.Field>
-                            <input placeholder='Password' type={"password"} className={"borderless"} name={'password'}
+                            <Input icon={<Icon name={icon} link onClick={this.handleTypeChange}/>}
+                                   placeholder='Password' type={type} className={"borderless"}
+                                   name={'password'}
                                    value={password}
                                    onBlur={handleBlur}
                                    onChange={handleChange}/>
