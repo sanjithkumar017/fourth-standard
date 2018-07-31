@@ -6,13 +6,13 @@ class SignInComponent extends React.Component {
         super(props)
         this.state = {
             type: 'password',
-            icon: 'eye' //eye slash
+            icon: 'eye'
         }
 
         this.handleTypeChange = this.handleTypeChange.bind(this)
     }
 
-    handleTypeChange(e, data) {
+    handleTypeChange() {
         this.setState((prevState) => {
             if (prevState.type === 'password') {
                 return {type: 'input', icon: 'eye slash'}

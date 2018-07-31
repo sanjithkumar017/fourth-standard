@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6e087a1-8ce5-4313-ae20-7f298d8f296d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/forms/Authentication/SignInComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/forms/Authentication/SignInComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/forms/Authentication/SignUpComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/forms/Authentication/SignUpComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/withSemanticUIFormik.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/withSemanticUIFormik.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -68,8 +64,8 @@
       <file leaf-file-name="SignInComponent.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/forms/Authentication/SignInComponent.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="53" column="35" selection-start-line="53" selection-start-column="35" selection-end-line="53" selection-end-column="35" />
+            <state relative-caret-position="270">
+              <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -80,8 +76,8 @@
       <file leaf-file-name="SignUpComponent.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/forms/Authentication/SignUpComponent.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="54" column="98" lean-forward="true" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="98" />
+            <state relative-caret-position="287">
+              <caret line="55" column="69" lean-forward="true" selection-start-line="55" selection-start-column="58" selection-end-line="55" selection-end-column="69" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -315,12 +311,12 @@
       <workItem from="1532753165856" duration="143000" />
       <workItem from="1532753406126" duration="28088000" />
       <workItem from="1532948012527" duration="1169000" />
-      <workItem from="1533018289432" duration="4169000" />
+      <workItem from="1533018289432" duration="6132000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76085000" />
+    <option name="totallyTimeSpent" value="78048000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -335,7 +331,7 @@
     <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24960877" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24960877" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32917318" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -343,7 +339,7 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.33073324" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.33073324" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -760,8 +756,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/forms/Authentication/SignUpComponent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="54" column="98" lean-forward="true" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="98" />
+        <state relative-caret-position="287">
+          <caret line="55" column="69" lean-forward="true" selection-start-line="55" selection-start-column="58" selection-end-line="55" selection-end-column="69" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -770,8 +766,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/forms/Authentication/SignInComponent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="53" column="35" selection-start-line="53" selection-start-column="35" selection-end-line="53" selection-end-column="35" />
+        <state relative-caret-position="270">
+          <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
