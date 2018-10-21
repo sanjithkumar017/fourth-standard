@@ -1,5 +1,6 @@
 import React from 'react';
 import {BrowserRouter} from 'react-router-dom'
+import {Menu, Grid} from 'semantic-ui-react'
 
 import MainComponent from './MainComponent'
 
@@ -16,6 +17,18 @@ class App extends React.Component {
             <BrowserRouter basename={URL_BASENAME}>
                 <div className={"fullHeight"}>
                     <MainComponent/>
+                    <Grid>
+                        <Grid.Row only='tablet mobile'>
+                            <Menu.Item name='sidebar' active={true}>
+                                <div className={"footer"}>
+
+
+                                </div>
+                            </Menu.Item>
+
+                        </Grid.Row>
+                    </Grid>
+
                 </div>
             </BrowserRouter>
         )

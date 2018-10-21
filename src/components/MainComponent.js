@@ -28,7 +28,7 @@ class MainComponent extends React.Component {
                     </div>
 
                 </Grid.Column>
-                <Grid.Column width={4} className={"score-content centerAll"}>
+                <Grid.Column width={4} className={"score-content centerAll"} only={'computer'}>
                     <Icon name={"trophy"} size={"massive"}/>
                 </Grid.Column>
             </Grid>

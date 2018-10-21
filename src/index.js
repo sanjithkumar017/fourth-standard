@@ -15,6 +15,10 @@ ReactDOM.render(<Provider store={store}>
 </Provider>, document.getElementById("app"))
 
 //TODO
+//Finish the layout. Set up routing.
+//Set up the counter for 5 seconds buffer and 60 seconds test
+//Show as many tests as possible
+
 //Login page
 ////Add a show hide button for password
 ////Unique username check button
@@ -29,7 +33,5 @@ ReactDOM.render(<Provider store={store}>
 //Not Found page
 //Work on the backend. Implement JWT
 
-
-//Users are allowed to login only once a day and can play for three times only.
 //We are implementing websockets for realtime happiness.
 

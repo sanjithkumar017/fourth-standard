@@ -169,7 +169,7 @@ html, body, #app {
     color: var(--goldenGold);
 }
 
-.ui.form .field .input.borderless input{
+.ui.form .field .input.borderless input {
     border: none !important;
     border-radius: 0 !important;
     border-bottom: 2px solid var(--menuItemsBase) !important;
@@ -187,7 +187,7 @@ html, body, #app {
     width: 40%;
 }
 
-.ui.form input:not([type]), .ui.form input[type="date"], .ui.form input[type="datetime-local"], .ui.form input[type="email"], .ui.form input[type="number"], .ui.form input[type="password"], .ui.form input[type="search"], .ui.form input[type="tel"], .ui.form input[type="time"], .ui.form input[type="text"], .ui.form input[type="file"], .ui.form input[type="url"],.ui.form .field .input input  {
+.ui.form input:not([type]), .ui.form input[type="date"], .ui.form input[type="datetime-local"], .ui.form input[type="email"], .ui.form input[type="number"], .ui.form input[type="password"], .ui.form input[type="search"], .ui.form input[type="tel"], .ui.form input[type="time"], .ui.form input[type="text"], .ui.form input[type="file"], .ui.form input[type="url"], .ui.form .field .input input {
     background-color: transparent;
     text-align: center;
 }
@@ -223,4 +223,14 @@ a {
 
 a:hover {
     color: var(--menuItemSelected);
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 4rem;
+    background-color: var(--menuItemSelected);
 }
